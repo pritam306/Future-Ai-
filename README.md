@@ -48,7 +48,7 @@ This project represents a vision of how AI tools will evolve into seamless, inte
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/future-ai.git
+git clone https://github.com/pritam306/future-ai.git
 ```
 
 Open the project:
@@ -70,8 +70,6 @@ If you are using HuggingFace or any AI API:
 1. Get your API Key
 2. Replace in your JS file:
 
-```js
-const API_KEY = "your_api_key_here";
 ```
 
 ---
