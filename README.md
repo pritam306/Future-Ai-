@@ -33,9 +33,8 @@ This project represents a vision of how AI tools will evolve into seamless, inte
 
 ---
 
-## 📸 Preview
-
-![preview]
+## Preview
+<img width="1914" height="902" alt="Screenshot 2026-04-17 231110" src="https://github.com/user-attachments/assets/a693e46c-02fd-496b-812e-45e69c0041a4" />
 
 ---
 
