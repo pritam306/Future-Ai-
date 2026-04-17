@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vitalis Code Section</title>
+  <link rel="stylesheet" href="code.css"/>
+</head>
+<body>
+<div class="scroll-progress"></div>
+<section class="code-section">
+  
+  <h1 class="title">
+    💻 <span>Vitalis</span> Language in Action
+    <span class="badge">REAL CODE</span>
+  </h1>
+
+  <div class="grid">
+
+    <!-- CARD 1 -->
+    <div class="card purple">
+      <div class="card-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <p>neuromorphic.sl</p>
+      </div>
+      <pre>
+<span class="comment">// Spiking neural network</span>
+<span class="keyword">fn</span> simulate_snn(steps: i64) -> i64 {
+  let neuron = create(1.0, 0.9)
+  let spikes = 0
+}
+      </pre>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card cyan">
+      <div class="card-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <p>pattern_match.sl</p>
+      </div>
+      <pre>
+<span class="keyword">enum</span> Shape {
+  Circle(f64),
+  Rect(f64,f64)
+}
+
+<span class="keyword">fn</span> area(s: Shape) {
+  match s {
+    Circle(r) => r*r
+  }
+}
+      </pre>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card yellow">
+      <div class="card-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <p>tensor_ops.sl</p>
+      </div>
+      <pre>
+<span class="comment">// tensor ops</span>
+<span class="keyword">fn</span> forward() {
+  let w = tensor(8,8)
+  let x = tensor(8,1)
+}
+      </pre>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card orange">
+      <div class="card-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <p>concurrency.sl</p>
+      </div>
+      <pre>
+<span class="keyword">async fn</span> process(data) {
+  spawn {
+    send(data)
+  }
+}
+      </pre>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="capabilities">
+
+  <h2 class="cap-title">
+    🧪 <span>Core Language Capabilities</span>
+  </h2>
+
+  <div class="cap-grid">
+
+    <div class="cap-card green">
+      <h3>Self-Hosting Bootstrap</h3>
+      <p>The compiler compiles itself. Produces native executables with deterministic builds.</p>
+    </div>
+
+    <div class="cap-card cyan">
+      <h3>Cranelift JIT + AOT</h3>
+      <p>Compiles to native machine code. No interpreter, no bytecode, no VM.</p>
+    </div>
+
+    <div class="cap-card orange">
+      <h3>Project Freedom OS</h3>
+      <p>Bare-metal OS with GUI, file system, kernel modules and zero dependencies.</p>
+    </div>
+
+    <div class="cap-card pink">
+      <h3>Neuromorphic Computing</h3>
+      <p>Spike engines, STDP learning, LIF neurons, hippocampal memory systems.</p>
+    </div>
+
+    <div class="cap-card yellow">
+      <h3>Structured Concurrency</h3>
+      <p>Mutex, channels, async tasks, and deadlock detection built-in.</p>
+    </div>
+
+    <div class="cap-card purple">
+      <h3>Hindley-Milner Inference</h3>
+      <p>Type inference with polymorphism, unification, and flow typing.</p>
+    </div>
+
+    <div class="cap-card gold">
+      <h3>Algebraic Effects & NLL</h3>
+      <p>Effect handlers, borrow regions, and lifetime tracking system.</p>
+    </div>
+
+    <div class="cap-card red">
+      <h3>Ownership & Borrowing</h3>
+      <p>Memory safety via ownership, move semantics, and immutability.</p>
+    </div>
+
+    <div class="cap-card lime">
+      <h3>24 Algorithm Libraries</h3>
+      <p>ML, cryptography, graphs, compression, bioinformatics & more.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="pipeline">
+<section id="compiler">
+  <h2 class="pipe-title">
+    🔍 <span>Full Compilation Pipeline</span>
+    <span class="pipe-badge">~2.6MS JIT</span>
+  </h2>
+
+  <div class="pipe-grid">
+
+    <!-- LEFT CARD -->
+    <div class="pipe-card">
+      <div class="pipe-header green">
+        <span class="stage">STAGE 0</span>
+        <h3>Rust Compiler (Host)</h3>
+      </div>
+
+      <ul class="pipe-list">
+
+        <li>
+          <span class="dot green"></span>
+          <div>
+            <b>Source (.sl)</b>
+            <p>Vitalis source files</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot green"></span>
+          <div>
+            <b>Logos Lexer</b>
+            <p>Zero-copy tokenizer, 80+ tokens</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot cyan"></span>
+          <div>
+            <b>Pratt Parser</b>
+            <p>Recursive-descent, 30+ AST nodes</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot yellow"></span>
+          <div>
+            <b>Type Checker</b>
+            <p>Hindley-Milner + ownership + effects</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot pink"></span>
+          <div>
+            <b>SSA IR Builder</b>
+            <p>30 instruction variants</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot purple"></span>
+          <div>
+            <b>Optimizer</b>
+            <p>DCE, CSE, constant folding, inlining</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot orange"></span>
+          <div>
+            <b>Cranelift JIT</b>
+            <p>Native x86-64 machine code</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- RIGHT CARD -->
+    <div class="pipe-card">
+      <div class="pipe-header yellow">
+        <span class="stage">STAGE 1</span>
+        <h3>Self-Hosted Compiler</h3>
+      </div>
+
+      <ul class="pipe-list">
+
+        <li>
+          <span class="dot green"></span>
+          <div>
+            <b>lexer.sl</b>
+            <p>12 token types, keyword table</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot cyan"></span>
+          <div>
+            <b>parser.sl</b>
+            <p>Recursive-descent, 200K node buffer</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot yellow"></span>
+          <div>
+            <b>typechecker.sl</b>
+            <p>Scope resolution, builtin registry</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot pink"></span>
+          <div>
+            <b>ir_gen.sl</b>
+            <p>SSA IR, 200K instruction buffer</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot purple"></span>
+          <div>
+            <b>regalloc.sl</b>
+            <p>Linear-scan, live intervals</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot orange"></span>
+          <div>
+            <b>x86_emit.sl</b>
+            <p>REX, ModR/M, label fixups</p>
+          </div>
+          <span class="arrow">→</span>
+        </li>
+
+        <li>
+          <span class="dot red"></span>
+          <div>
+            <b>pe_writer.sl</b>
+            <p>DOS stub, COFF, sections, imports</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+</section>
+
+<section class="boot-sequence">
+<section id="agi">
+  <h2 class="boot-title">
+    🔌 <span>14-Step Boot Sequence</span>
+    <span class="boot-badge">UEFI → BARE-METAL → DESKTOP</span>
+  </h2>
+
+  <p class="boot-desc">
+    The kernel boots through a precisely ordered initialization sequence. After UEFI firmware loads the binary, <b>efi_main()</b> takes control and launches the graphical desktop.
+  </p>
+
+  <div class="boot-grid">
+
+    <!-- STEP -->
+    <div class="boot-card green">
+      <div class="boot-num">1</div>
+      <div>
+        <h4>Serial Init</h4>
+        <p>COM1 at 115200 baud 8N1</p>
+      </div>
+    </div>
+
+    <div class="boot-card cyan">
+      <div class="boot-num">2</div>
+      <div>
+        <h4>GOP Framebuffer</h4>
+        <p>Locate UEFI Graphics Output Protocol</p>
+      </div>
+    </div>
+
+    <div class="boot-card yellow">
+      <div class="boot-num">3</div>
+      <div>
+        <h4>ACPI RSDP</h4>
+        <p>Search configuration tables</p>
+      </div>
+    </div>
+
+    <div class="boot-card orange">
+      <div class="boot-num">4</div>
+      <div>
+        <h4>Memory Map</h4>
+        <p>Get UEFI memory descriptors</p>
+      </div>
+    </div>
+
+    <div class="boot-card red">
+      <div class="boot-num">5</div>
+      <div>
+        <h4>Exit Boot Services</h4>
+        <p>Transition to bare-metal</p>
+      </div>
+    </div>
+
+    <div class="boot-card green">
+      <div class="boot-num">6</div>
+      <div>
+        <h4>GDT + TSS</h4>
+        <p>Kernel/user segments</p>
+      </div>
+    </div>
+
+    <div class="boot-card cyan">
+      <div class="boot-num">7</div>
+      <div>
+        <h4>IDT</h4>
+        <p>Interrupt handling setup</p>
+      </div>
+    </div>
+
+    <div class="boot-card pink">
+      <div class="boot-num">8</div>
+      <div>
+        <h4>PMM</h4>
+        <p>Physical memory bitmap</p>
+      </div>
+    </div>
+
+    <div class="boot-card yellow">
+      <div class="boot-num">9</div>
+      <div>
+        <h4>Heap</h4>
+        <p>Kernel heap allocator</p>
+      </div>
+    </div>
+
+    <div class="boot-card orange">
+      <div class="boot-num">10</div>
+      <div>
+        <h4>Stack Switch</h4>
+        <p>Kernel stack via trampoline</p>
+      </div>
+    </div>
+
+    <div class="boot-card purple">
+      <div class="boot-num">11</div>
+      <div>
+        <h4>VMM</h4>
+        <p>Page tables, mapping</p>
+      </div>
+    </div>
+
+    <div class="boot-card green">
+      <div class="boot-num">12</div>
+      <div>
+        <h4>Timer + Input</h4>
+        <p>PIT + keyboard/mouse</p>
+      </div>
+    </div>
+
+    <div class="boot-card cyan">
+      <div class="boot-num">13</div>
+      <div>
+        <h4>Filesystem</h4>
+        <p>ramfs + VFS mount</p>
+      </div>
+    </div>
+
+    <div class="boot-card yellow">
+      <div class="boot-num">14</div>
+      <div>
+        <h4>Login → Desktop</h4>
+        <p>Graphical UI launch</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="distribution">
+
+  <h2 class="dist-title">
+    📊 <span>Code Distribution</span>
+    <span class="dist-badge">BY MODULE SIZE</span>
+  </h2>
+
+  <div class="dist-card">
+
+    <!-- ITEM -->
+    <div class="dist-row">
+      <span class="dist-label cyan">nexus_code.rs</span>
+      <div class="dist-bar">
+        <div class="dist-fill cyan" style="width: 100%"></div>
+      </div>
+      <span class="dist-value">1,121</span>
+    </div>
+
+    <div class="dist-row">
+      <span class="dist-label green">editor.rs</span>
+      <div class="dist-bar">
+        <div class="dist-fill green" style="width: 55%"></div>
+      </div>
+      <span class="dist-value">624</span>
+    </div>
+
+    <div class="dist-row">
+      <span class="dist-label pink">shell.rs</span>
+      <div class="dist-bar">
+        <div class="dist-fill pink" style="width: 53%"></div>
+      </div>
+      <span class="dist-value">600</span>
+    </div>
+
+    <div class="dist-row">
+      <span class="dist-label yellow">framebuffer.rs</span>
+      <div class="dist-bar">
+        <div class="dist-fill yellow" style="width: 45%"></div>
+      </div>
+      <span class="dist-value">501</span>
+    </div>
+
+    <div class="dist-row">
+      <span class="dist-label orange">main.rs</span>
+      <div class="dist-bar">
+        <div class="dist-fill orange" style="width: 45%"></div>
+      </div>
+      <span class="dist-value">501</span>
+    </div>
+
+    <div class="dist-row">
+      <span class="dist-label purple">idt.rs</span>
+      <div class="dist-bar">
+        <div class="dist-fill purple" style="width: 40%"></div>
+      </div>
+      <span class="dist-value">443</span>
+    </div>
+
+    <div class="dist-row">
+      <span class="dist-label red">window.rs</span>
+      <div class="dist-bar">
+        <div class="dist-fill red" style="width: 38%"></div>
+      </div>
+      <span class="dist-value">420</span>
+    </div>
+
+    <div class="dist-row">
+      <span class="dist-label cyan">file_browser.rs</span>
+      <div class="dist-bar">
+        <div class="dist-fill cyan" style="width: 32%"></div>
+      </div>
+      <span class="dist-value">361</span>
+    </div>
+
+    <div class="dist-row">
+      <span class="dist-label green">uefi.rs</span>
+      <div class="dist-bar">
+        <div class="dist-fill green" style="width: 27%"></div>
+      </div>
+      <span class="dist-value">307</span>
+    </div>
+
+    <div class="dist-row">
+      <span class="dist-label pink">desktop.rs</span>
+      <div class="dist-bar">
+        <div class="dist-fill pink" style="width: 26%"></div>
+      </div>
+      <span class="dist-value">295</span>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const height = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = (scrollTop / height) * 100;
+
+  document.querySelector(".scroll-progress").style.width = progress + "%";
+});
+</script>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h2 class="footer-logo">⚡ Vitalis</h2>
+      <p>
+        A modern systems language focused on performance, safety, and low-level control.
+        Built for bare-metal, OS development, and high-performance computing.
+      </p>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-center">
+      <div class="footer-stat">
+        <h3>9+</h3>
+        <p>Core Modules</p>
+      </div>
+      <div class="footer-stat">
+        <h3>8,700+</h3>
+        <p>Lines of Code</p>
+      </div>
+      <div class="footer-stat">
+        <h3>0</h3>
+        <p>Dependencies</p>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <p class="footer-tag">
+        Built with precision ⚙️ — Designed for developers who go beyond limits.
+      </p>
+      <p class="footer-copy">
+        © PRITAM BUILDS . All rights reserved.
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
