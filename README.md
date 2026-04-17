@@ -72,24 +72,6 @@ If you are using HuggingFace or any AI API:
 
 ```
 
----
-
-## Future Scope
-
-* AGI simulation modules
-* Voice interaction
-* Real-time AI assistant
-* Multi-model AI integration
-
----
-
-## Author
-
-**Pritam (PRITAM BUILDS)**
-Frontend Developer • UI/UX Designer • AI Explorer
-
----
-
 ## ⭐ Support
 
 If you like this project:
@@ -105,5 +87,3 @@ If you like this project:
 This project is licensed under the MIT License.
 
 ---
-
-> "The future belongs to those who build it." 🚀
