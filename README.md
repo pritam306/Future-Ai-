@@ -63,16 +63,7 @@ Just open `index.html` in your browser
 
 ---
 
-## API Setup (Important)
-
-If you are using HuggingFace or any AI API:
-
-1. Get your API Key
-2. Replace in your JS file:
-
-```
-
-## ⭐ Support
+## Support Pritam
 
 If you like this project:
 
