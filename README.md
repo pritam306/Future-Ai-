@@ -2,7 +2,9 @@
 
 ### Next-Gen AI Interface • LLM • AGI Vision
 
-![banner](https://via.placeholder.com/1200x400?text=Future+AI)
+![banner]
+<img width="1914" height="910" alt="Screenshot 2026-04-17 232754" src="https://github.com/user-attachments/assets/1acc1e0b-eef1-47fc-b831-69fd0997f228" />
+
 
 ## About The Project
 
@@ -67,7 +69,6 @@ Just open `index.html` in your browser
 If you like this project:
 
 * Star this repo
-* Fork it
 * Share it
 
 ---
