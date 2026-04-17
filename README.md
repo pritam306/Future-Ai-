@@ -35,7 +35,7 @@ This project represents a vision of how AI tools will evolve into seamless, inte
 
 ## 📸 Preview
 
-![preview]("C:\Users\pikum\OneDrive\Pictures\Screenshots\Screenshot 2026-04-17 231110.png)
+![preview]
 
 ---
 
