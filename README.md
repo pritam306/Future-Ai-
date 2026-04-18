@@ -30,7 +30,7 @@ This project represents a vision of how AI tools will evolve into seamless, inte
 * **Frontend:** HTML, CSS, JavaScript
 * **3D/Effects:** Three.js 
 * **AI Integration:** HuggingFace API / LLM
-* **DataBase :- From Premomayee [ MYSQl ]
+* **DataBase :- From Premomayee [ MYSQl ]  >> premomayee.netlify.app
 * **Design:** Figma / tailwind css
 
 ---
