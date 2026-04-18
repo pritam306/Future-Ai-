@@ -40,6 +40,25 @@ This project represents a vision of how AI tools will evolve into seamless, inte
 
 ---
 
+## Forge Modules
+Forge SEO
+>> Generate optimized meta tags, SERP previews, and social cards using AI-driven keyword intelligence.
+
+ResumeForge
+>> Create professional, ATS-friendly resumes with AI-enhanced bullet points and formatting.
+
+ColorForge
+>> Smart color palette generator with contrast validation and export-ready CSS.
+
+SchemaForge
+>> Generate structured JSON-LD data for better SEO and search engine visibility.
+
+JSONForge
+>> Format, validate, and visualize JSON data with intelligent syntax assistance.
+
+CostForge
+>> Compare AI model costs (Claude, GPT, Gemini) and optimize usage strategies
+
 <p align="center">
   <a href="https://future-ui.netlify.app/"><b> View Live </b></a>
 </p>
